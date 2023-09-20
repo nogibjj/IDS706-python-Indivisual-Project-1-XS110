@@ -14,3 +14,4 @@ matplotlib==3.7.2
 polars
 pyarrow
 tabulate
+nbval
