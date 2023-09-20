@@ -1,6 +1,6 @@
-[![CI](https://github.com/nogibjj/IDS706-python-Indivisual-Project-1-XS110/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/IDS706-python-Indivisual-Project-1-XS110/actions/workflows/cicd.yml)
 
-# World Population
+
+# IDS 706 Individual Project 1
 
 
 ## Data
@@ -11,31 +11,80 @@ I downloaded `word_population.csv` from kaggle and uploaded it into this respori
 
 ## Setup
 
-I used week2 mini project as a template and made the following modifications: 
+I used week3 mini project as a template and made the following modifications: 
 
 ### 1. Update requirements.txt:
 ```
 #script
-polars
-pyarrow
-tabulate
+nbval
+ruff
 ```
-### 2. Read data
+### 2. jupyter notebook
 
-Instead of using pd.read_csv, I use `pl.read_csv` to read `world_population.csv`
+I created `individual_project.ipynb` to perform descriptive statistics using Polars
+
+### 3. .py file
+
+I created two .py files and save them in scripts folder
+
+1. `script.py`
+2. `lib.py`
+
+### 4. test_.py file
+
+I created two test_.py files to test the Python script and library, and save them in scripts folder
+
+1. `test_script.py`
+2. `test_lib.py`
+
+The test_script.py tests script.py runs without errors, and test_lib.py tests each functions in lib.py
+ 
+
+### 5. Update Makefile
+
+The Makefile correctly includes and executes all required commands.
+
+Running all tests (notebook, script, lib)
+```
+test:
+	python -m pytest -vv --cov=scripts scripts/test_*.py
+	pytest --nbval individual_project.ipynb
+```
+
+Formatting code with Python black	
+```
+format:
+	black scripts/*.py
+```
+
+Linting code with Ruff
+```
+lint:
+	ruff check scripts/*.py
+```
+
+## Results
+
+### Github Actions badges
+
+[![install](https://github.com/nogibjj/IDS706-python-Indivisual-Project-1-XS110/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/IDS706-python-Indivisual-Project-1-XS110/actions/workflows/install.yml)
+
+[![lint](https://github.com/nogibjj/IDS706-python-Indivisual-Project-1-XS110/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/IDS706-python-Indivisual-Project-1-XS110/actions/workflows/lint.yml)
+
+[![format](https://github.com/nogibjj/IDS706-python-Indivisual-Project-1-XS110/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/IDS706-python-Indivisual-Project-1-XS110/actions/workflows/format.yml)
+
+[![test](https://github.com/nogibjj/IDS706-python-Indivisual-Project-1-XS110/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/IDS706-python-Indivisual-Project-1-XS110/actions/workflows/test.yml)
+
+[![generate_report](https://github.com/nogibjj/IDS706-python-Indivisual-Project-1-XS110/actions/workflows/generate_report.yml/badge.svg)](https://github.com/nogibjj/IDS706-python-Indivisual-Project-1-XS110/actions/workflows/generate_report.yml)
+
+### Report
+
+I automatically generate the descriptive statistics report to `report.md`. 
+
+### Demo Video
 
 
-### 3. Update script.py
 
-I updated the script.py using Polars for descriptive statistics to generate summary statistics (mean, median, standard deviation)
-
-And I also created data visualization.
-
-### 4. Generate report.md
-
-Run ` make all` in terminal, I generated `report.md` automatically.
-
-![Alt text](/image/image6.png)
 ## Data Visualization
 
 I analysed the 234 countries' population in 2022, growth rate and Area(km²).
