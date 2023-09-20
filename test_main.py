@@ -1,4 +1,4 @@
-import main  # Import your main module
+import lib  # Import your main module
 import polars as pl
 
 
@@ -13,7 +13,7 @@ def test_main():
     data = pl.read_csv(input_file_path)
 
     # Call the function from main.py with the DataFrame
-    main.save_report(data, summary_report, histogram_image, boxplot_image)
+    lib.save_report(data, summary_report, histogram_image, boxplot_image)
 
 
 if __name__ == "__main__":
