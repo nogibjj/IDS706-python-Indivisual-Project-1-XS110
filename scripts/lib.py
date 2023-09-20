@@ -35,6 +35,7 @@ def descript_stat(df):
     print("Variance:\n", variance)
     print("Standard Deviation:\n", std_deviation)
 
+
 def save_report(data, output_summary_report, histogram_image_path, boxplot_image_path):
     # Generate summary statistics for numeric columns
     summary_stats = data.describe()
@@ -71,7 +72,8 @@ def histogram(data):
     plt.ylabel("Frequency")
     plt.title("Histogram of 2022 Population")
     plt.show()
-    
+
+
 def boxplot(data):
     # Create a boxplot visualization for the '2022 Population' column
     plt.boxplot(data[["2022 Population"]])
