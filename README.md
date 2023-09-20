@@ -1,10 +1,4 @@
-[![Install](https://github.com/nogibjj/HugoHu-Project-1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/HugoHu-Project-1/actions/workflows/install.yml)
-
-[![Lint](https://github.com/nogibjj/HugoHu-Project-1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/HugoHu-Project-1/actions/workflows/lint.yml)
-
-[![Format](https://github.com/nogibjj/HugoHu-Project-1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/HugoHu-Project-1/actions/workflows/format.yml)
-
-[![Test](https://github.com/nogibjj/HugoHu-Project-1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/HugoHu-Project-1/actions/workflows/test.yml)
+[![CI](https://github.com/nogibjj/IDS706-python-Indivisual-Project-1-XS110/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/IDS706-python-Indivisual-Project-1-XS110/actions/workflows/cicd.yml)
 
 # World Population
 
