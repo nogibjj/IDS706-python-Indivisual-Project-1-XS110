@@ -9,7 +9,7 @@ lint:
 	pylint --disable=R,C --ignore-patterns=test_.*?py *.py
 
 test:
-	python -m pytest -vv --cov=main test_*.py
+	python -m pytest -vv --cov=lib test_*.py
 	pytest --nbval individual_project.ipynb
 
 deploy:
