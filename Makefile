@@ -3,11 +3,11 @@ install:
 		pip install -r requirements.txt
 
 format:
-	black *.py
+	black scripts/*.py
 
 lint:
 	#pylint --disable=R,C --ignore-patterns=test_.*?py *.py
-	ruff check *.py
+	ruff check scripts/*.py
 
 test:
 	python -m pytest -vv --cov=scripts scripts/test_*.py
