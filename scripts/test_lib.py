@@ -1,14 +1,14 @@
 import unittest
-import lib  # Import the lib module 
+import lib  # Import the lib module
+
 
 class TestLibFunctions(unittest.TestCase):
-
     def setUp(self):
         # Create a sample Polars DataFrame for testing
         data = {
-            '2022 Population': [100, 200, 300, 400, 500],
-            'Growth Rate': [1.1, 2.2, 3.3, 4.4, 5.5],
-            'Area (km²)': [1000, 2000, 3000, 4000, 5000]
+            "2022 Population": [100, 200, 300, 400, 500],
+            "Growth Rate": [1.1, 2.2, 3.3, 4.4, 5.5],
+            "Area (km²)": [1000, 2000, 3000, 4000, 5000],
         }
         self.df = lib.pl.DataFrame(data)
 
@@ -38,5 +38,6 @@ class TestLibFunctions(unittest.TestCase):
         except Exception as e:
             self.fail(f"boxplot function raised an exception: {e}")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
