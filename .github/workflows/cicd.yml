@@ -21,8 +21,8 @@ jobs:
         run: make format
       - name: deploy
         run: make deploy
-      # - name: Run script
-      #   run: python scripts/script.py
+      - name: Run script
+        run: python scripts/script.py
       # - name: Run lib
       #   run: python scripts/lib.py
       - name: List files
