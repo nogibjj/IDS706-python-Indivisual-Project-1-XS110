@@ -38,6 +38,5 @@ class TestLibFunctions(unittest.TestCase):
         except Exception as e:
             self.fail(f"boxplot function raised an exception: {e}")
 
-
 if __name__ == "__main__":
     unittest.main()
