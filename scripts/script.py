@@ -23,7 +23,7 @@ summary_report = "report.md"
 histogram_image = "image/population_histogram.png"
 boxplot_image = "image/population_boxplot.png"
 
-WP_data = readfile(input_file_path)
+WP_data = lib.readfile(input_file_path)
 
 # country's population in 2022, growth rate and area.
 data = WP_data[["2022 Population", "Growth Rate", "Area (km²)"]]
