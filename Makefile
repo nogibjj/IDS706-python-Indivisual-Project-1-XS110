@@ -10,6 +10,7 @@ lint:
 
 test:
 	python -m pytest -vv --cov=main test_*.py
+	pytest --nbval individual_project.ipynb
 
 deploy:
 	#deploy goes here
