@@ -83,7 +83,7 @@ I automatically generate the descriptive statistics report to `report.md`.
 
 ### Demo Video
 
-[Youtube_link](https://www.youtube.com/watch?v=W1kOfEQHqbU)
+[Youtube_link](https://youtu.be/W1kOfEQHqbU?si=lpJLVJMJLZy6JwxL)
 
 ## Data Visualization
 
